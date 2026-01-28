@@ -4,7 +4,7 @@ from typing import List, Tuple
 
 def read_prefs(path: str) -> tuple[int, List[List[int]], List[List[int]]]:
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             tokens = [t for t in f.read().split()]
     except FileNotFoundError:
         raise ValueError(f"Could not open input file: {path}")
@@ -41,7 +41,7 @@ def read_prefs(path: str) -> tuple[int, List[List[int]], List[List[int]]]:
 
 def read_matching(path: str) -> List[Tuple[int,int]]:
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding="utf-8-sig") as f:
             lines = [ln.strip() for ln in f.readlines() if ln.strip()]
     except FileNotFoundError:
         raise ValueError(f"Could not open matching file: {path}")

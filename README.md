@@ -1,3 +1,5 @@
+Rayyan Sulaiman ID: 54761895
+
 Python 3
 Dependencies listed in `requirements.txt`
 
@@ -23,3 +25,5 @@ python stable.py bench
 dir results
 start results\matcher_runtime.png
 start results\verifier_runtime.png
+
+Graphs and solutions are located in results folder
